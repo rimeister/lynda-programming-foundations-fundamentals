@@ -23,3 +23,8 @@ alert(summedVal);
 	Return exits the function.
 
 */
+
+/*
+	You can split your code up into multiple files.
+	In JS, you can just import them using script tags, but I guess this is where "browserify" require statements could com in.
+*/
