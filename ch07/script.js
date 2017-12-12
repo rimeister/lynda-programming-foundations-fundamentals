@@ -30,3 +30,16 @@ document.getElementById('findGroovy').addEventListener('click', function(event){
 	keyPhraseEle.innerHTML = phrase;
 
 });
+
+document.getElementById('regBtn').addEventListener('click', function(event){
+	event.preventDefault();
+
+	var isGroove = /groovy/;
+
+	if ( isGroove.test(phrase) ) {
+		alert( 'RegExp results: Groovy can be found at index ' + phrase.indexOf('groovy') );
+	} else {
+		alert( '"Groovy" has been removed from the phrase' );
+	}
+
+});
