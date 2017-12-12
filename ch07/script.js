@@ -14,7 +14,6 @@ document.getElementById('testBtn').addEventListener('click', function(event){
 var keyPhraseEle = document.getElementById('keyPhrase');
 var phrase = keyPhraseEle.innerHTML;
 var slicedWord;
-var newPhrase;
 
 document.getElementById('findGroovy').addEventListener('click', function(event){
 	event.preventDefault();
@@ -27,7 +26,7 @@ document.getElementById('findGroovy').addEventListener('click', function(event){
 		alert('"' + slicedWord + '" has been removed from the phrase');
 	}
 
-	newPhrase = phrase.replace(slicedWord,'');
-	keyPhraseEle.innerHTML = newPhrase;
+	phrase = phrase.replace(slicedWord,'');
+	keyPhraseEle.innerHTML = phrase;
 
 });
